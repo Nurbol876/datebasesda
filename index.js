@@ -4,807 +4,4289 @@ const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.json({
-    "categories":  ["Закуски", "Первые Блюда", "Мангал", "Уйгурские блюда", "Пицца(большая)", "Пицца(маленькая)", "Плов", "Манты,", "Салаты", "Напитки"],
-    "products": [
+    "Batken": [
       {
         "id": 1,
-        "title": "Баклажаны по восточному",
-        "subtitle": "Баклажаны, помидоры, чеснок, кинза, специи",
-        "weight": 220,
-        "price": 380,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/photo-2021-10-26_13.51.30_gYv9cYH/ed1f0a1cc02832d39ec74dea61a37da5.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Садыков К. Баткен",
+        "place": "Топоз-Баткен",
+        "number": "№1 30.08.  2019г",
+        "point": "",
+        "phone": 772853999,
+        "people": 17,
+        "products": [
+          7,
+          0,
+          [
+            "топоздун саны",
+            "топоздун эти"
+          ],
+          [
+            8,
+            8
+          ]
+        ]
       },
       {
         "id": 2,
-        "title": "Рулетики из баклажанов",
-        "subtitle": "Баклажаны, помидоры, зелень, майонез",
-        "weight": 260,
-        "price": 390,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/ruletiki_iz_baklazhan/5c4b42453a60ee55b88eeb05dda74be3.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Курсанбаев Авалбек Кадамжай",
+        "place": "Орозбек",
+        "number": "№2 30.08. 2019г",
+        "point": "",
+        "phone": 777319080,
+        "people": 59,
+        "products": [
+          17.6,
+          0,
+          [
+            "уйдун саны",
+            "уйдун эти",
+            "уйдун сүтү"
+          ],
+          [
+            8,
+            8,
+            26
+          ]
+        ]
       },
       {
         "id": 3,
-        "title": "Рыбное ассорти",
-        "subtitle": "Семга, эскалар, горбуша, скумбрия",
-        "weight": 350,
-        "price": 1310,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/rybnoe_assorti_uF9yWNR/65cfb38f4853026374c9a9b5e02966c6.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Акматалиев  Баткен",
+        "place": "Алыш-Дан",
+        "number": "№18",
+        "point": "",
+        "phone": "",
+        "people": 355,
+        "products": [
+          125,
+          157,
+          [
+            "өрүк",
+            "өрүк как"
+          ],
+          [
+            100,
+            100
+          ]
+        ]
       },
       {
         "id": 4,
-        "title": "Перец фаршированный",
-        "subtitle": "Острый перец, начиненный говядиной и обжаренный в яичном кляре",
-        "weight": 200,
-        "price": 380,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/perets_farshirovannyj_q9c6BfQ/afa7e424f831b2cd557931886b7e7302.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Абдиназаров Дооран Лейлек",
+        "place": "Кутчу-Дан",
+        "number": "№4 30.08. 2019г",
+        "point": "",
+        "phone": 772913675,
+        "people": 9,
+        "products": [
+          20,
+          0,
+          [
+            "буудай",
+            "алма"
+          ],
+          [
+            25,
+            15
+          ]
+        ]
       },
       {
         "id": 5,
-        "title": "Мясная тарелка",
-        "subtitle": "Казы, говяжий язык, шпигованная говядина",
-        "weight": 240,
-        "price": 730,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/mjasnaja_tarelka_TLD9PnD/65423adb1a3f6c8039354216e979bbf9.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Базарбаев Садык лейлек",
+        "place": "Гордой",
+        "number": "№5 30.08. 2019г",
+        "point": "",
+        "phone": 776022356,
+        "people": 7,
+        "products": [
+          57,
+          0,
+          [
+            "буудай",
+            "беде, эспарцет"
+          ],
+          [
+            20,
+            10
+          ]
+        ]
       },
       {
         "id": 6,
-        "title": "Овощное ассорти",
-        "subtitle": "Помидоры, огурцы, зелень, болгарский перец, брынза",
-        "weight": 350,
-        "price": 390,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/ovoschnoe_assorti_tQhQKIp/3f540a85c3d3db0d04755425ad1c18fd.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Икрамов М. Лейлек",
+        "place": "Нектар-Алга",
+        "number": "№3 30.08.  2019г",
+        "point": "",
+        "phone": 772473862,
+        "people": 5,
+        "products": [
+          42,
+          11.5,
+          [
+            "өрүк",
+            "беде, эспарцет",
+            "аралаш жер-жемиш",
+            "шабдалы",
+            "алма"
+          ],
+          [
+            18,
+            9,
+            21,
+            12,
+            18
+          ]
+        ]
       },
       {
         "id": 7,
-        "title": "Селедка с картошкой",
-        "subtitle": "Сельдь, отварной картофель, маринованные огурцы, лук",
-        "weight": 300,
-        "price": 380,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/seledka_s_kartoshkoj_r2M7eTc/b05156e451a028810abe7bde2cddba0f.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Салиева Райхан Кадамжай",
+        "place": "Салиева",
+        "number": "№73 13.11. 2020г",
+        "point": "",
+        "phone": 772643094,
+        "people": 4,
+        "products": [
+          5,
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            90
+          ]
+        ]
       },
       {
         "id": 8,
-        "title": "Домашние соленья",
-        "subtitle": "Маринованные грибы, помидоры чери, корнишоны, маринованая капуста",
-        "weight": 500,
-        "price": 560,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/domashnie_solenja_1396h2A/8978fde9d5e2063a59b532396c95b976.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Закуски"
+        "name": "Абдирайым кызы Айпери баткен",
+        "place": "ж/ч",
+        "number": "№148 24.03.  2023г",
+        "point": "",
+        "phone": 773532122,
+        "people": 2,
+        "products": [
+          1.5,
+          0,
+          [
+            "кулпунай",
+            "күнөскана",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            3,
+            3,
+            50
+          ]
+        ]
       },
       {
-        "id":9,
-        "title": "Пельмени с бульоном",
-        "subtitle": "пельмени из говядины, сметана, укроп",
-        "weight": 450,
-        "price": 255,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/Pelmeni_s_bulonom_THjjgGf_gndEIEw/25499fb54563fb0e4e72d75dbaac891b.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "id": 9,
+        "name": "Айипов Жигитали баткен",
+        "place": "ж/ч",
+        "number": "№149 24.03. 2023г",
+        "point": "",
+        "phone": 220334814,
+        "people": 5,
+        "products": [
+          2,
+          0,
+          [
+            "өрүк",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5,
+            12
+          ]
+        ]
       },
       {
         "id": 10,
-        "title": "Бедона шорпо",
-        "subtitle": "Перепелка, фрикадельки, картофель, морковь, лук, болгарский перец",
-        "weight": 500,
-        "price": 500,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/bedona_shorpo_oLkyi68/72b5195187cf28e4d3054fd73b3e8bed.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Токтом №50 24.10.20 Кара-Бакский  айылный кенеш \n",
+        "place": "Зардалы органикалык аймагы  Баткенская область Баткенский район Кара-Бакский а/о с.Зардалы \n",
+        "number": "",
+        "point": "",
+        "phone": 701551911,
+        "people": 47,
+        "products": [
+          1100,
+          0,
+          [
+            "жүгөрү",
+            "буудай",
+            "беде",
+            "өрүк",
+            "өрүк как",
+            "күрөскана",
+            "алма"
+          ],
+          [
+            28,
+            17,
+            5,
+            75,
+            55,
+            2,
+            40
+          ]
+        ]
       },
       {
         "id": 11,
-        "title": "Чечевичный крем-суп",
-        "subtitle": "Чечевица, картофель, болгарский перец, лимон",
-        "weight": 300,
-        "price": 230,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/chechevichnyj_krem-sup/e81aedfa342f052598da5cdb6dac45d1.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Токтом №12 28.02.2023 Дара айылдык кенеши \n",
+        "place": "Кайынды органикалык аймагы Баткенская область Баткенский район Дара  а/а \n",
+        "number": "№14",
+        "point": "",
+        "phone": 772342612,
+        "people": 62,
+        "products": [
+          3021,
+          0,
+          [
+            "картошка",
+            "жүгөрү",
+            "өрүк"
+          ],
+          [
+            15,
+            30,
+            50
+          ]
+        ]
       },
       {
         "id": 12,
-        "title": "Окрошка",
-        "subtitle": "Яйца, огурцы, редис, говядина, картофель, зелень",
-        "weight": 300,
-        "price": 255,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/okroshka_u9iK5Si/8cff3f01c96bc8acd62dab251f7ea9be.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
-      },
+        "name": "Жыйынтык",
+        "place": "11 айыл чарба",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": 500,
+        "products": [
+          4398.1,
+          168.5,
+          [
+            "картошка",
+            "жүгөрү",
+            "кулпунай",
+            "буудай",
+            "беде",
+            "өрүк",
+            "өрүк как",
+            "беде, эспарцет",
+            "күнөскана",
+            "аралаш жер-жемиш",
+            "шабдалы",
+            "алма",
+            "топоз",
+            "уй",
+            "сүт",
+            "жалпы эт",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            31,
+            58,
+            3,
+            62,
+            5,
+            248,
+            155,
+            19,
+            5,
+            21,
+            12,
+            73,
+            8,
+            8,
+            26,
+            16,
+            152
+          ]
+        ]
+      }
+    ],
+    "IssykKul": [
       {
         "id": 13,
-        "title": "Чучвара 1пор",
-        "subtitle": "Говядина, пельмешки, морковь, редька, болгарский перец, сметана",
-        "weight": 420,
-        "price": 240,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/chuchvara_GIsjWcw/779db5ff684bc20cd6267e246579c265.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Абылкасымов Жети-Огуз",
+        "place": "Кут Дарак ОсОО",
+        "number": "№7 13.09. 2019г",
+        "point": "",
+        "phone": 705124870,
+        "people": "",
+        "products": [
+          2.5,
+          10,
+          [
+            "алма"
+          ],
+          [
+            13
+          ]
+        ]
       },
       {
         "id": 14,
-        "title": "Чучвара 0,7пор",
-        "subtitle": "Говядина, пельмешки, морковь, редька, болгарский перец, сметана",
-        "weight": 350,
-        "price": 220,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/chuchvara_z6mYWCW/b0fc0a526016c8bf4a9bd3b4c70cb999.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Сарыгулов Т. Жети-Огуз",
+        "place": "Тосор-Мурутчан",
+        "number": "№8",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          5,
+          20,
+          [
+            "өрүк",
+            "алма"
+          ],
+          [
+            10,
+            15
+          ]
+        ]
       },
       {
         "id": 15,
-        "title": "Суп с фрикадельками 1пор",
-        "subtitle": "Фрикадельки из говядины, картофель, морковь, болгарский перец, зелень",
-        "weight": 400,
-        "price": 250,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/sup_s_frikadelkami_zchOh5h/3e384801f609006ce9d8256d030720f1.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Бектемиров И. Ак-Суу",
+        "place": "Имаш",
+        "number": "№10",
+        "point": "",
+        "phone": 709228540,
+        "people": "",
+        "products": [
+          3.4,
+          0,
+          [
+            "буудай",
+            "беде, эспарцет"
+          ],
+          [
+            5,
+            6
+          ]
+        ]
       },
       {
         "id": 16,
-        "title": "Суп с фрикадельками 0,7пор",
-        "subtitle": "Фрикадельки из говядины, картофель, морковь, болгарский перец, зелень",
-        "weight": 300,
-        "price": 230,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/sup_s_frikadelkami_PGg6odC/a1bedc448b32a8ac30a819b65cbe214b.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Первые Блюда"
+        "name": "Молдогазиев Тон",
+        "place": "Албан Асем",
+        "number": "№12 13.09. 2019г",
+        "point": "",
+        "phone": 705856404,
+        "people": "",
+        "products": [
+          7.5,
+          12,
+          [
+            "жүгөрү",
+            "арпа",
+            "өрүк",
+            "беде, эспарцет",
+            "алма"
+          ],
+          [
+            30,
+            7,
+            12,
+            15,
+            3
+          ]
+        ]
       },
       {
         "id": 17,
-        "title": "Оромо джигар",
-        "subtitle": "печень завернутая в жир",
-        "weight": 110,
-        "price": 200,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/oromo_dzhigar_iRJTBCz_kymmHZD_hXgtiJi/daae0e3b1a9bbaf4b4733b1960bc8b34.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Рысмендиева А.  Ак-Суу",
+        "place": "Ак-Суу органик кооператив",
+        "number": "№85 17.04. 2021г",
+        "point": "",
+        "phone": 708593344,
+        "people": "",
+        "products": [
+          510,
+          0,
+          [
+            "картошка",
+            "аралаш мөмө бак"
+          ],
+          [
+            3000,
+            950
+          ]
+        ]
       },
       {
         "id": 18,
-        "title": "Бухара шашлык",
-        "subtitle": "Сочные рулетики из говядины с бараньим внутренним жиром и специями",
-        "weight": 100,
-        "price": 210,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/shashlyk_buhara_VnnQsdH/0a9fe671fd19ec55a0f08b644019bb86.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Касымов М.  Ак-Суу р-у",
+        "place": "Темирлан Агросервис кооператив Ак-Суу р-у",
+        "number": "№93 10.08. 2021г",
+        "point": "",
+        "phone": 705513513,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "алма"
+          ],
+          [
+            10
+          ]
+        ]
       },
       {
         "id": 19,
-        "title": "Джаз баранина",
-        "subtitle": "Шашлык из баранины, подается со свежим луком",
-        "weight": 80,
-        "price": 210,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/dzhaz_baranina_ZoAQcBe/d750d7d1bec43aeb598e040ef1dedb44.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Базаркулов Т.  Жети-Огуз р-у",
+        "place": "Тосор органик кооператив Жети-Огуз р-у",
+        "number": "№94 10.08. 2021г",
+        "point": "",
+        "phone": 708277645,
+        "people": "",
+        "products": [
+          294,
+          250,
+          [
+            "өрүк",
+            "беде, эспарцет",
+            "аралаш жер-жемиш",
+            "алма"
+          ],
+          [
+            250,
+            264,
+            200,
+            500
+          ]
+        ]
       },
       {
         "id": 20,
-        "title": "Джаз говядина",
-        "subtitle": "Шашлык из говядины, подается со свежим луком",
-        "weight": 80,
-        "price": 210,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/Dzhaz_govjadina_3PhB6fl/7217c6c7d9ae920418ea5c4c47d64ed9.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Шаршембиев Э. Түп р-у",
+        "place": "Теплица",
+        "number": "№95 10.08. 2021г",
+        "point": "",
+        "phone": 502926822,
+        "people": "",
+        "products": [
+          0.04,
+          0,
+          [
+            "күнөскана"
+          ],
+          [
+            2
+          ]
+        ]
       },
       {
         "id": 21,
-        "title": "Кофта",
-        "subtitle": "Рубленный сочный шашлык из говядины",
-        "weight": 100,
-        "price": 200,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/kofta_rQfWg8r/d3cc5e0f3c4f9ba334fa7d48af4289bf.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Билалова Жаңыл Ысык-Көл р-у",
+        "place": "ч/ф",
+        "number": "№96 10.08. 2021г",
+        "point": "",
+        "phone": 700319131,
+        "people": "",
+        "products": [
+          4.9,
+          0,
+          [
+            "беде, эспарцет"
+          ],
+          [
+            12
+          ]
+        ]
       },
       {
         "id": 22,
-        "title": "Форель на углях",
-        "subtitle": "Форель, приготовленная на мангале",
-        "weight": 220,
-        "price": 590,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/forel_na_ugljah_MVesnUz/53ce3d02b844badb1b5151843f6a64ba.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Токомбаев А.  АК-Суу",
+        "place": "Маман органик кооператив Ак-Суйский р-у",
+        "number": "№97 10.08. 2021г",
+        "point": "",
+        "phone": 703511760,
+        "people": "",
+        "products": [
+          25.3,
+          1000,
+          [
+            "өрүк",
+            "аралаш жер-жемиш",
+            "алма"
+          ],
+          [
+            550,
+            220,
+            600
+          ]
+        ]
       },
       {
         "id": 23,
-        "title": "Шашлык куринные крылышки",
-        "subtitle": "Шашлык из куриных крыльев, подается со свежим луком",
-        "weight": 200,
-        "price": 300,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/shashlyk_kur_krylja_ZFFgdZt/978bfbdd7cedb30d6a94855054585274.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Букараев Элдияр Тон",
+        "place": "к/х Бухара Тоң р-у",
+        "number": "№98 10.08. 2021г",
+        "point": "",
+        "phone": 505465346,
+        "people": "",
+        "products": [
+          4.55,
+          0,
+          [
+            "картошка",
+            "аралаш жер-жемиш"
+          ],
+          [
+            1,
+            9
+          ]
+        ]
       },
       {
         "id": 24,
-        "title": "Уч-панжа",
-        "subtitle": "Говядина, думба",
-        "weight": 220,
-        "price": 630,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/uch_pandzha_p6hRVDv/57676fec81a840732ea8b4bddfaadd6a.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Мангал"
+        "name": "Жылтырова Сонунгүл Ак-Суу р-у",
+        "place": "Ысык-Куль органик кооператив",
+        "number": "№112 27.09. 2021г",
+        "point": "",
+        "phone": 702918580,
+        "people": "",
+        "products": [
+          29,
+          0,
+          [
+            "дары чөптөр"
+          ],
+          [
+            70
+          ]
+        ]
       },
       {
         "id": 25,
-        "title": "Соумян",
-        "subtitle": "Говядина, болгарский перец, лук, тесто, специи",
-        "weight": 400,
-        "price": 310,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/soumjan_iaeuvMf/26fcbbcf2979a60c73ca07c6884b0c34.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Дуйшебаева Айсулуу Болгонбаевна Ысык-Көл району",
+        "place": "Жеке фермер",
+        "number": "№117 15.04. 2022г",
+        "point": "",
+        "phone": 778957282,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "аралаш мөмө бак",
+            "дары чөптөр"
+          ],
+          [
+            10,
+            6
+          ]
+        ]
       },
       {
         "id": 26,
-        "title": "Фунчеза сяй",
-        "subtitle": "Говядина, фунчеза, болгарский перец, лук, специи",
-        "weight": 350,
-        "price": 410,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/funcheza_sjaj_UlA2Ja8/2aba9b2b4cc9f2135dd6ea1a62721dac.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Эсенкожоев Р г. Каракол",
+        "place": "ч/ф",
+        "number": "№78 01.03. 2021г",
+        "point": "",
+        "phone": 559730105,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            3
+          ]
+        ]
       },
       {
         "id": 27,
-        "title": "Мишуру",
-        "subtitle": "Говядина, черные грибы, болгарский перец, яйца, лук, специи",
-        "weight": 350,
-        "price": 440,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/mishuru_lfIrs86/c2b98dd3c1d2477e5a8bb8651464ba51.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Булакеев З Жети-Огуз",
+        "place": "ч/ф",
+        "number": "№90 16.07.2021г",
+        "point": "",
+        "phone": 702507036,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5
+          ]
+        ]
       },
       {
         "id": 28,
-        "title": "Ганфан",
-        "subtitle": "Говядина, рис, болгарский перец, сельдерей, китайская капуста, специи",
-        "weight": 500,
-        "price": 320,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/ganfan_kaVYSjn/38b5f3cd0fa2d16c771b4ef2044b1453.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Ногоев Н Ысык-Кол ",
+        "place": "ч/ф",
+        "number": "№121 10.06.2022г",
+        "point": "",
+        "phone": 707654114,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "аралаш мөмө бак"
+          ],
+          [
+            20
+          ]
+        ]
       },
       {
         "id": 29,
-        "title": "Казан кебаб говядина",
-        "subtitle": "Говядина, лук, специи",
-        "weight": 350,
-        "price": 460,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/kazan-kebab_iz_govjadiny_3uBAJfK/a7d45dd8a17b337bdc04dae7d68d3bc2.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Саткангулова К Ысык-Кол",
+        "place": "ч/ф",
+        "number": "№122 10.06. 2022г",
+        "point": "",
+        "phone": 707654114,
+        "people": "",
+        "products": [
+          0.02,
+          "",
+          [
+            "алма"
+          ],
+          [
+            1
+          ]
+        ]
       },
       {
         "id": 30,
-        "title": "Лагман из куриной грудки",
-        "subtitle": "Куринная грудка, болгарский перец, лук репчатый, масло растительное, тесто, специи",
-        "weight": 450,
-        "price": 310,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/photo-2021-10-26_13.51.23_8sviPkw/08515549995cc7951668d56586ddc25a.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Назармухамедов Р.М. г. Каракол",
+        "place": "ОсОО Айр Эконат",
+        "number": "№115 17.02. 2022г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            20
+          ]
+        ]
       },
       {
         "id": 31,
-        "title": "Лагман по домашнему",
-        "subtitle": "Говядина, болгарский перец, лук репчатый, капуста, тесто, специи",
-        "weight": 450,
-        "price": 310,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/photo-2021-10-26_13.51.18_GWcCV0h/23b1a2aa0c0cc2d006c52346df7fa016.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
-      },
-      {
-        "id": 32,
-        "title": "Говядина с черными грибами",
-        "subtitle": "Говядина, грибы, болгарский перец, лук",
-        "weight": 350,
-        "price": 440,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/govjadina_s_chernymi_gribami_Q6OHU9F/5994143999ad9d683ac0ffeb8e00536a.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Уйгурские блюда"
+        "name": "Чоң-Таш органика а/а, Ыссык-Кульская область, Тупский район, Чон-Таш а/а",
+        "place": "",
+        "number": " 11.09.20 Чон-Таш айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1131,
+          "",
+          [
+            "карагат",
+            "сарымсак",
+            "өрүк",
+            ""
+          ],
+          [
+            545,
+            3000,
+            680
+          ]
+        ]
       },
       {
         "id": 33,
-        "title": "Четыре сыра",
-        "subtitle": "Пицца-соус, сыры: моцаррела, эмменталь, дорблю, пармезан",
-        "weight": 920,
-        "price": 798,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v45/Pitstsa_30sm/4_Syira_30sm/Medium.png?hash=f530c2fc1726d73286f6656fd56d59ae",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
-      },
+        "name": "жыйынтык",
+        "place": "19 пилот чарба 1 орг. Аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          2034.21,
+          1292,
+          [
+            "картошка",
+            "карагат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "сарымсак",
+            "өрүк",
+            "беде, эспарцет",
+            "аралаш мөмө бак",
+            "күнөскана",
+            "аралаш жер-жемиш",
+            "дары-чөптөр",
+            "алма",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            3001,
+            545,
+            30,
+            5,
+            7,
+            3000,
+            1522,
+            297,
+            988,
+            2,
+            429,
+            76,
+            1192,
+            28
+          ]
+        ]
+      }
+    ],
+    "JalalAbad": [
       {
         "id": 34,
-        "title": "Вегетарианская",
-        "subtitle": "Пицца-соус, сыр Моцаррела, зелень, лук, шампиньоны, болгарский перец, помидоры, маслины, кукуруза",
-        "weight": 1000,
-        "price": 718,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v32/Pitstsa_30sm/Vegetarianskaia_30sm/Medium.png?hash=5696140c19c5358cc13389a0122876fd",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Рахматов Х. Ала-Бука",
+        "place": "Ч/Ф",
+        "number": "№16 30.09. 2019г",
+        "point": "",
+        "phone": 559102878,
+        "people": "",
+        "products": [
+          2,
+          0,
+          [
+            "жүгөрү"
+          ],
+          [
+            10
+          ]
+        ]
       },
       {
         "id": 35,
-        "title": "Пепперони",
-        "subtitle": "Пицца-соус, сыр Моцаррела, салями, шампиньоны",
-        "weight": 970,
-        "price": 618,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_30sm/Pepperoni_30sm/Medium.png?hash=21df342a79807048d67e34d64d9a0d1a",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Тойчуев Ж. Ала-Бука",
+        "place": "Бургандуу СКХ",
+        "number": "№22 30.09. 2019г",
+        "point": "",
+        "phone": 778729791,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "перец"
+          ],
+          [
+            28
+          ]
+        ]
       },
       {
         "id": 36,
-        "title": "Детская",
-        "subtitle": "Пицца-соус, сыр Моцаррела, сосиски, помидоры, кукуруза",
-        "weight": 1110,
-        "price": 698,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Detskaia_40sm/Medium.png?hash=dbcff2d37ab8ce18b4c3c011ad23f971",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Бекмуратов А. Аксы",
+        "place": "Биофермер",
+        "number": "№19",
+        "point": "",
+        "phone": 550142804,
+        "people": "",
+        "products": [
+          2,
+          0,
+          [
+            "жүгөрү",
+            "пахта"
+          ],
+          [
+            10.5,
+            4.8
+          ]
+        ]
       },
       {
         "id": 37,
-        "title": "Маргарита",
-        "subtitle": "Пицца-соус, сыр Моцаррела, орегано, помидоры, базилик",
-        "weight": 800,
-        "price": 448,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Margarita_40sm/Medium.png?hash=952c6e8d7c96b9496109d569b06518da",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Кабыланов Ж. Аксы",
+        "place": "Биофермер",
+        "number": "№20",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1.5,
+          0,
+          [
+            "пахта"
+          ],
+          [
+            7.5
+          ]
+        ]
       },
       {
         "id": 38,
-        "title": "Домашняя",
-        "subtitle": "Пицца-соус, сыр Моцаррела, ветчина, помидоры, шампиньоны, зелень",
-        "weight": 990,
-        "price": 588,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Domashniaia_40sm/Medium.png?hash=3ee9059fce99b636396b98e16a0aa519",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Калилова П. Аксы",
+        "place": "Калилова",
+        "number": "№21 30.09. 2019г",
+        "point": "",
+        "phone": 705811231,
+        "people": "",
+        "products": [
+          0.3,
+          0,
+          [
+            "алма"
+          ],
+          [
+            3.5
+          ]
+        ]
       },
       {
         "id": 39,
-        "title": "Фрикасе",
-        "subtitle": "Куринная грудка, грибы Вешенки, кукуруза, сливочный соус, зелень",
-        "weight": 1150,
-        "price": 788,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Frikase_40sm/Medium.png?hash=e8771936a83f2e2a14086ad86d22a3ef",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Сулайманов Э. Ноокенский р-н",
+        "place": "Бургандуу СКХ",
+        "number": "№17",
+        "point": "",
+        "phone": 559313224,
+        "people": "",
+        "products": [
+          2.2,
+          0,
+          [
+            "томат",
+            "перец"
+          ],
+          [
+            21,
+            78
+          ]
+        ]
       },
       {
         "id": 40,
-        "title": "Мегапепперони",
-        "subtitle": "Пицца-соус, сыр Моцаррела, салями, перчики Халапеньо",
-        "weight": 940,
-        "price": 678,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Pitstsa_40sm/Megapepperoni_40sm/Medium.png?hash=f80abeaf0117913c6f626981c349d582",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(большая)"
+        "name": "Абдуримов Т. Ноокен",
+        "place": "Бургандуу СКХ",
+        "number": "№23",
+        "point": "",
+        "phone": 755858510,
+        "people": "",
+        "products": [
+          1.5,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 41,
-        "title": "Четыре сыра",
-        "subtitle": "Пицца-соус, сыры: моцаррела, эмменталь, дорблю, пармезан",
-        "weight": 560,
-        "price": 588,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v45/Pitstsa_30sm/4_Syira_30sm/Medium.png?hash=f530c2fc1726d73286f6656fd56d59ae",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Азизов Э. Ноокен",
+        "place": "Бургандуу СКХ",
+        "number": "№24 30.09. 2019г",
+        "point": "",
+        "phone": 755036379,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "перец"
+          ],
+          [
+            39
+          ]
+        ]
       },
       {
         "id": 42,
-        "title": "Вегетарианская",
-        "subtitle": "Пицца-соус, сыр Моцаррела, зелень, лук, шампиньоны, болгарский перец, помидоры, маслины, кукуруза",
-        "weight": 500,
-        "price": 438,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v32/Pitstsa_30sm/Vegetarianskaia_30sm/Medium.png?hash=5696140c19c5358cc13389a0122876fd",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Араббаев О. Ноокен",
+        "place": "Биофермер",
+        "number": "№25",
+        "point": "",
+        "phone": 778619813,
+        "people": "",
+        "products": [
+          2.61,
+          0,
+          [
+            "пахта"
+          ],
+          [
+            10.5
+          ]
+        ]
       },
       {
         "id": 43,
-        "title": "Пепперони",
-        "subtitle": "Пицца-соус, сыр Моцаррела, салями, шампиньоны",
-        "weight": 570,
-        "price": 408,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_30sm/Pepperoni_30sm/Medium.png?hash=21df342a79807048d67e34d64d9a0d1a",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Бекжанов А Ноокен",
+        "place": "Биофермер",
+        "number": "№26 30.09. 2019г",
+        "point": "",
+        "phone": 772149406,
+        "people": "",
+        "products": [
+          2.2,
+          0,
+          [
+            "жүгөрү",
+            "пахта"
+          ],
+          [
+            12,
+            4.2
+          ]
+        ]
       },
       {
         "id": 44,
-        "title": "Детская",
-        "subtitle": "Пицца-соус, сыр Моцаррела, сосиски, помидоры, кукуруза",
-        "weight": 650,
-        "price": 438,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Detskaia_40sm/Medium.png?hash=dbcff2d37ab8ce18b4c3c011ad23f971",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Камилов У Ноокен",
+        "place": "Биофермер",
+        "number": "№27 30.09. 2019г",
+        "point": "",
+        "phone": 773470870,
+        "people": "",
+        "products": [
+          0.3,
+          0,
+          [
+            "аралаш жер-жемиш"
+          ],
+          [
+            17
+          ]
+        ]
       },
       {
         "id": 45,
-        "title": "Маргарита",
-        "subtitle": "Пицца-соус, сыр Моцаррела, орегано, помидоры, базилик",
-        "weight": 470,
-        "price": 278,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Margarita_40sm/Medium.png?hash=952c6e8d7c96b9496109d569b06518da",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Мамадиев М Ноокен",
+        "place": "Мамадиев",
+        "number": "№28 30.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          0.3,
+          0,
+          [
+            "алма"
+          ],
+          [
+            2.8
+          ]
+        ]
       },
       {
         "id": 46,
-        "title": "Домашняя",
-        "subtitle": "Пицца-соус, сыр Моцаррела, ветчина, помидоры, шампиньоны, зелень",
-        "weight": 580,
-        "price": 388,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Domashniaia_40sm/Medium.png?hash=3ee9059fce99b636396b98e16a0aa519",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Рахманов Ш Сузак",
+        "place": "Биофермер",
+        "number": "№29 30.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1.2,
+          0,
+          [
+            "жүгөрү",
+            "пахта"
+          ],
+          [
+            3.5,
+            3.9
+          ]
+        ]
       },
       {
         "id": 47,
-        "title": "Фрикасе",
-        "subtitle": "Куринная грудка, грибы Вешенки, кукуруза, сливочный соус, зелень",
-        "weight": 680,
-        "price": 538,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v1/Pitstsa_40sm/Frikase_40sm/Medium.png?hash=e8771936a83f2e2a14086ad86d22a3ef",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Халдаров Р Сузак",
+        "place": "Биофермер",
+        "number": "№30 30.09. 2019г",
+        "point": "",
+        "phone": 774066196,
+        "people": "",
+        "products": [
+          1.6,
+          0,
+          [
+            "пахта"
+          ],
+          [
+            7.6
+          ]
+        ]
       },
       {
         "id": 48,
-        "title": "Мегапепперони",
-        "subtitle": "Пицца-соус, сыр Моцаррела, салями, перчики Халапеньо",
-        "weight": 450,
-        "price": 458,
-        "images": "https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Pitstsa_40sm/Megapepperoni_40sm/Medium.png?hash=f80abeaf0117913c6f626981c349d582",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Пицца(маленькая)"
+        "name": "Иманов А Сузак",
+        "place": "Иманов А",
+        "number": "№31",
+        "point": "",
+        "phone": 550884644,
+        "people": "",
+        "products": [
+          0.51,
+          0,
+          [
+            "аралаш мөмө бак",
+            "алма"
+          ],
+          [
+            3.7,
+            4.5
+          ]
+        ]
       },
       {
         "id": 49,
-        "title": "Плов от бренд-шефа Анвара Бабаджанова",
-        "subtitle": "Рис лазер, рассыпчатый фарш, телятина, красная и желтая морковка, украшается чесноком и перцем чили",
-        "weight": 3300,
-        "price": 2700,
-        "images": "https://navat.kg/dostavka/files/products/plov-ot-anvara-babadzhanova.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Казбеков Э Сузак",
+        "place": "Казбеков Э",
+        "number": "№32 30.09. 2019г",
+        "point": "",
+        "phone": 770850102,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 50,
-        "title": "Плов чайханский",
-        "subtitle": "Рис лазер, мясо ягненка и теленка, сухофрукты",
-        "weight": 3300,
-        "price": 2600,
-        "images": "https://navat.kg/dostavka/files/products/plov-chajhanskij.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Авилов Т Сузак",
+        "place": "Авилов Т",
+        "number": "№33",
+        "point": "",
+        "phone": 555803472,
+        "people": "",
+        "products": [
+          2,
+          0,
+          [
+            "бадыраң",
+            "томат",
+            "лимон"
+          ],
+          [
+            72,
+            3.5,
+            20
+          ]
+        ]
       },
       {
         "id": 51,
-        "title": "Плов узгенский",
-        "subtitle": "Узгенский рис Девзари, мясо ягненка и теленка, красная и желтая морковка",
-        "weight": 3300,
-        "price": 2600,
-        "images": "https://navat.kg/dostavka/files/products/plov-uzgenskij.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Ресбеков Н Чаткал",
+        "place": "Рыспеков Н",
+        "number": "№34",
+        "point": "",
+        "phone": 223313131,
+        "people": "",
+        "products": [
+          1.5,
+          0,
+          [
+            "Алма"
+          ],
+          [
+            3
+          ]
+        ]
       },
       {
         "id": 52,
-        "title": "Плов ташкентский",
-        "subtitle": "Рис лазер, мясо ягненка и теленка, красная и желтая морковка и горох, украшается чесноком и сушеным перцем чили",
-        "weight": 3300,
-        "price": 2600,
-        "images": "https://navat.kg/dostavka/files/products/plov-tashkentskij.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Шурубеков А Токтогул",
+        "place": "Ч/Ф ",
+        "number": "№82",
+        "point": "",
+        "phone": 557662521,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            30
+          ]
+        ]
       },
       {
         "id": 53,
-        "title": "Плов праздничный",
-        "subtitle": "Рис лазер, мясо ягненка и курицы, красная и желтая морковка и барбарис, украшается чесноком и сушеным перцем чили",
-        "weight": 3300,
-        "price": 2600,
-        "images": "https://navat.kg/dostavka/files/products/plov-prazdnichnyj.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Бадыров М. Токтогул ",
+        "place": "ч/ф",
+        "number": "№81",
+        "point": "",
+        "phone": 551410110,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            15
+          ]
+        ]
       },
       {
         "id": 54,
-        "title": "Фирменный плов",
-        "subtitle": "Рис лазер, мясо ягненка и теленка, украшается казы и куринным яйцом",
-        "weight": 3300,
-        "price": 2800,
-        "images": "https://navat.kg/dostavka/files/products/firmennyj-plov-navat.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Сыргабаев К. Токтогул",
+        "place": "Ч/Ф",
+        "number": "№80 18.03. 2021г",
+        "point": "",
+        "phone": 508481976,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            10
+          ]
+        ]
       },
       {
         "id": 55,
-        "title": "Хан плов ташкентский",
-        "subtitle": "Рис лазер, мясо ягненка в золотистом хлебном шкатулке",
-        "weight": 3800,
-        "price": 2800,
-        "images": "https://navat.kg/dostavka/files/products/hanplov.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Мусаев М Сузак",
+        "place": "ч/ф",
+        "number": "№84 28.06. 2021г",
+        "point": "",
+        "phone": 773342085,
+        "people": "",
+        "products": [
+          3.5,
+          0,
+          [
+            "күрүч",
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            25,
+            120
+          ]
+        ]
       },
       {
         "id": 56,
-        "title": "Хан плов чайханский",
-        "subtitle": "Плов Девзир, мясо теленка и сухофрукты в золотистом хлебном шкатулке",
-        "weight": 3800,
-        "price": 2800,
-        "images": "https://navat.kg/dostavka/files/products/hanplov.800x600w.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Плов"
+        "name": "Кадыров Э. Базар-Коргон",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 777728279,
+        "people": "",
+        "products": [
+          0,
+          "1480 б.майы",
+          [
+            "жаңгак"
+          ],
+          [
+            2.3
+          ]
+        ]
       },
       {
         "id": 57,
-        "title": "Манты с мясом и жусаем",
-        "subtitle": "Тесто, мясо, жусай",
-        "weight": "5 * 44",
-        "price": 270,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_mjasom_mcGlNEE_5buLDTX/b7af7b33f1daa8bd1dc608c1f45a540e.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Арап уулу А. Базар-Коргон",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 772701732,
+        "people": "",
+        "products": [
+          "",
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 58,
-        "title": "Манты с мясом и жусаем",
-        "subtitle": "1 шт. манты с мясом и жусаем",
-        "weight": 44,
-        "price": 55,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_mjasom_mcGlNEE_5buLDTX/b7af7b33f1daa8bd1dc608c1f45a540e.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Бургонду а/а Жалал-Абадская область Ноокенский район с.Курама ",
+        "place": "",
+        "number": "№4 19.09.2020г. Бургандинский  айылный кенеш",
+        "point": "",
+        "phone": 555482211,
+        "people": "",
+        "products": [
+          161,
+          981,
+          [
+            "Томат",
+            "Перец"
+          ],
+          [
+            191,
+            790
+          ]
+        ]
       },
       {
         "id": 59,
-        "title": "Манты с джусаем",
-        "subtitle": "Джусай, тесто, лук",
-        "weight": "5 * 44",
-        "price": 250,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_tykvojdzhusaem_po_sezonu_3wpg6sB/955d3ff75909801f61fff35fc3581f44.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Кызыл-Ункур о/а, Жалал-Абадская область, Базар-Коргонский район, с. Кызыл-Ункур",
+        "place": "",
+        "number": "19.08.2021г. № 6 Токтом Кызыл-Ункур айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1045,
+          23,
+          [
+            "жаңгак",
+            "Кара өрүк как",
+            "алма"
+          ],
+          [
+            200,
+            12,
+            60
+          ]
+        ]
       },
       {
         "id": 60,
-        "title": "Манты с джусаем",
-        "subtitle": "1 шт. манты с джусаем",
-        "weight": 44,
-        "price": 50,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_tykvojdzhusaem_po_sezonu_3wpg6sB/955d3ff75909801f61fff35fc3581f44.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
-      },
+        "name": "Жыйынтык",
+        "place": "24 пилоттук чарба 2 аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1227.7,
+          1004,
+          [
+            "бадыраң",
+            "жаңгак",
+            "томат",
+            "жүгөрү",
+            "лимон",
+            "кара өрүк как",
+            "перец",
+            "пахта",
+            "аралаш мөмө бак",
+            "аралаш жер-жемиш",
+            "күрүч",
+            "алма",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            72,
+            202.3,
+            215.5,
+            36,
+            20,
+            12,
+            935,
+            38.5,
+            3.7,
+            17,
+            25,
+            73.8,
+            175
+          ]
+        ]
+      }
+    ],
+    "Osh": [
       {
         "id": 61,
-        "title": "Манты",
-        "subtitle": "Говядина, тесто, лук",
-        "weight": "5 * 50",
-        "price": 310,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_mjasom_mcGlNEE/d2cff725fe4efc0a09251e1c95e83b30.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Сатыбаев М. Алай",
+        "place": "Чотон",
+        "number": "№35 30.09. 2019г",
+        "point": "",
+        "phone": 779916347,
+        "people": 4,
+        "products": [
+          1,
+          0,
+          [
+            "сарымсак",
+            "жүгөрү"
+          ],
+          [
+            0.3,
+            1
+          ]
+        ]
       },
       {
         "id": 62,
-        "title": "Манты",
-        "subtitle": "1 шт. манты",
-        "weight": 50,
-        "price": 60,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_s_mjasom_mcGlNEE/d2cff725fe4efc0a09251e1c95e83b30.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Умаров Сайпидин Араван",
+        "place": "Агросервис КСХ",
+        "number": "№36 30.09. 2019г",
+        "point": "",
+        "phone": 775575242,
+        "people": 100,
+        "products": [
+          140,
+          600,
+          [
+            "картошка",
+            "жүгөрү"
+          ],
+          [
+            320,
+            480
+          ]
+        ]
       },
       {
         "id": 63,
-        "title": "Манты жареные",
-        "subtitle": "Жареные в масле манты",
-        "weight": "5 * 50",
-        "price": 330,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_zharenye_fAsAIzI/9a9279567f73f0723578af0fb32f1190.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Туркбаев Б. Кара-Суу",
+        "place": "Туркбаев Бекташ ч/ф",
+        "number": "№37",
+        "point": "",
+        "phone": 770121947,
+        "people": 2,
+        "products": [
+          2,
+          0,
+          [
+            "аралаш жер-жемиш"
+          ],
+          [
+            3
+          ]
+        ]
       },
       {
         "id": 64,
-        "title": "Манты жареные",
-        "subtitle": "1 шт. манты жареные",
-        "weight": 50,
-        "price": 65,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/manty_zharenye_fAsAIzI/9a9279567f73f0723578af0fb32f1190.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Манты"
+        "name": "Жумабаев М. Кара-Кулжа",
+        "place": "к/х Жумабаев Маматкадыр",
+        "number": "№38 30.09. 2019г",
+        "point": "",
+        "phone": 779870134,
+        "people": "",
+        "products": [
+          2.1,
+          0,
+          [
+            "алма"
+          ],
+          [
+            8
+          ]
+        ]
       },
       {
         "id": 65,
-        "title": "Французский салат",
-        "subtitle": "Капуста, морковь, свекла, маринованные огурцы, картофель пай, говядина, майонез, грецкие орехи",
-        "weight": 300,
-        "price": 370,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/azimzhan_n-7452_NcJ5mTT/6508001b5d1e9d146fee87abe51a9844.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Култаев М. Озгон",
+        "place": "Болшевик багбандар биримдиги",
+        "number": "№39 30.09. 2019г",
+        "point": "",
+        "phone": 552011112,
+        "people": 5,
+        "products": [
+          5,
+          0,
+          [
+            "алма"
+          ],
+          [
+            32
+          ]
+        ]
       },
       {
         "id": 66,
-        "title": "Салат Нежный",
-        "subtitle": "Крабовые палочки, рис, яйцо, огурцы, майонез, кукуруза, зеленый лук",
-        "weight": 250,
-        "price": 330,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/azimzhan_n-7477_HtVWgtn/720e850449367dbc9b7dfcbe0d9d66bb.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Абдырахманов С. Озгон",
+        "place": "Сагын фермер ынтымактуу К/Х",
+        "number": "№40 30.09.  2019г",
+        "point": "",
+        "phone": 556584300,
+        "people": 4,
+        "products": [
+          5,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 67,
-        "title": "Витаминка",
-        "subtitle": "капуста, свекла, морковь, яблоки, оливковое масло",
-        "weight": 250,
-        "price": 230,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/Vitaminka_EyE1W8O_gE2ZxJ3_IZahJtr/44d6a752f0acf4a7791ac6daa2bcdb38.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Марипов Т. Ноокат",
+        "place": "Кызыр-Ата",
+        "number": "№41 30.09. 2019г",
+        "point": "",
+        "phone": 770326123,
+        "people": 3,
+        "products": [
+          1,
+          0,
+          [
+            "алма"
+          ],
+          [
+            5
+          ]
+        ]
       },
       {
         "id": 68,
-        "title": "Хрустящие баклажаны",
-        "subtitle": "баклажаны, соус терияки",
-        "weight": 200,
-        "price": 370,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/baklazhany_jWnsEoO/b8025dab92bf939e92319267ad6e9088.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Сулайманов Э. Чон-Алай",
+        "place": "Экоазык-түлүк к/х",
+        "number": "№42 30.09. 2019г",
+        "point": "",
+        "phone": 778488656,
+        "people": 20,
+        "products": [
+          140,
+          120,
+          [
+            "картошка",
+            "алма"
+          ],
+          [
+            120,
+            130
+          ]
+        ]
       },
       {
         "id": 69,
-        "title": "Восточный",
-        "subtitle": "Огурцы, помидоры, говядина, яичные блины, зеленый горошек, соевый соус, салатное масло",
-        "weight": 250,
-        "price": 350,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/vostochnyj_Dj7rhKe/e7b2d1242fe08f830b9225e9ea032b20.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Курбаналиев Н. г.Ош",
+        "place": "Ч/Ф",
+        "number": "№43 30.09. 2019г",
+        "point": "",
+        "phone": 779644796,
+        "people": 2,
+        "products": [
+          0.57,
+          0,
+          [
+            "аралаш жер-жемиш"
+          ],
+          [
+            1
+          ]
+        ]
       },
       {
         "id": 70,
-        "title": "Винегрет",
-        "subtitle": "Квашенная капуста, зеленый горошек, свекла, картофель, маринованные огурцы, салатное масло, укроп",
-        "weight": 250,
-        "price": 250,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/vinegret_IIFXcnT/9a9e2f74ab69132c7411fa438597e241.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Исраилов Э. Алай",
+        "place": "Агатан живодновод.",
+        "number": "№44 30.09. 2019г",
+        "point": "",
+        "phone": 552109748,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            1,
+            0.2
+          ]
+        ]
       },
       {
         "id": 71,
-        "title": "Ачичук",
-        "subtitle": "Огурцы, помидоры, болгарский перец, укроп",
-        "weight": 230,
-        "price": 240,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/achichuk_SoXNKP0/68f56b6898900ffd7c3f1763ba5befc5.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Токтасинов Ш. Араван",
+        "place": "Техник осеменатор",
+        "number": "№45 30.09. 2019г",
+        "point": "",
+        "phone": 557042440,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "уй эти",
+            "кой эти",
+            "эчки эти"
+          ],
+          [
+            0.3,
+            0.2,
+            0.2
+          ]
+        ]
       },
       {
         "id": 72,
-        "title": "Капустный с майонезом",
-        "subtitle": "Капуста, огурцы, масло или майонез на выбор",
-        "weight": 200,
-        "price": 230,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/kapustnyj_s_majonezom_PpaiHe7/ae801c83fb01fe1ee72550d1c3c1aba1.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Салаты"
+        "name": "Токуров М. Кара-Суу",
+        "place": "Чолпонай Асыл Тукум",
+        "number": "№46 30.09. 2019г",
+        "point": "",
+        "phone": 773760762,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 73,
-        "title": "Фанта",
-        "subtitle": "Фанта 0.25 в алюминевой банке",
-        "weight": 0.25,
-        "price": 90,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8654_ryJgNdO_x6Vxaf8/a7c83133b775fcdbfc69d434e1642f2c.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Кадырбаев Э. Кара-Суу",
+        "place": "\"Кадырбаев Эргеш\" животновод.",
+        "number": "№47 30.09. 2019г",
+        "point": "",
+        "phone": 708148258,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 74,
-        "title": "Спрайт",
-        "subtitle": "Спрайт 0.25 в алюминевой банке",
-        "weight": 0.25,
-        "price": 90,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8654_ryJgNdO_x6Vxaf8/a7c83133b775fcdbfc69d434e1642f2c.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Маматов Т. Кара-Суу",
+        "place": "Таирбек",
+        "number": "№48 30.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
       },
       {
         "id": 75,
-        "title": "Кока-Кола",
-        "subtitle": "Кока-Кола 0.25 л. в алюминевой банке",
-        "weight": 0.25,
-        "price": 90,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8654_ryJgNdO_x6Vxaf8/a7c83133b775fcdbfc69d434e1642f2c.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Хайдаров М. Ноокат",
+        "place": "Чарбадар",
+        "number": "№49 30.09. 2019г",
+        "point": "",
+        "phone": 777044752,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "уй эти"
+          ],
+          [
+            3
+          ]
+        ]
       },
       {
         "id": 76,
-        "title": "Фанта",
-        "subtitle": "Фанта 1 л. в бутылке",
-        "weight": 1,
-        "price": 170,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8651_WEnr9EA_MooVV1F_0scCSQi/50862a0316bef31ade7f42181d36529b.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Патаев Э. Чон-Алай",
+        "place": "Наркул",
+        "number": "№50 30.09. 2019г",
+        "point": "",
+        "phone": 777595018,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [
+            "топоз эти",
+            "кой эти",
+            "уй эти",
+            "жылкы эти"
+          ],
+          [
+            5,
+            2,
+            0.4,
+            1
+          ]
+        ]
       },
       {
         "id": 77,
-        "title": "Спрайт",
-        "subtitle": "Спрайт 1 л. в бутылке",
-        "weight": 1,
-        "price": 170,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8651_WEnr9EA_MooVV1F_0scCSQi/50862a0316bef31ade7f42181d36529b.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Эргешов А. г.Ош",
+        "place": "ч/ф",
+        "number": "№79 04.03. 2021г",
+        "point": "",
+        "phone": 773010112,
+        "people": 10,
+        "products": [
+          0.35,
+          0,
+          [
+            "алма"
+          ],
+          [
+            10
+          ]
+        ]
       },
       {
         "id": 78,
-        "title": "Кока-Кола",
-        "subtitle": "Кока-Кола 1 л. в бутылке",
-        "weight": 1,
-        "price": 170,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/0F7A8651_WEnr9EA_MooVV1F_0scCSQi/50862a0316bef31ade7f42181d36529b.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Н.Кадыров Кара-Суу р-н",
+        "place": "“Асатулла Ата” кооператив",
+        "number": "№ 108 15.04. 2022г",
+        "point": "",
+        "phone": 551450845,
+        "people": 10,
+        "products": [
+          7,
+          "200 миң көчөт",
+          [
+            "аралаш мөмө бак"
+          ],
+          [
+            "200 миң көчөт"
+          ]
+        ]
       },
       {
         "id": 79,
-        "title": "Компот из ягод",
-        "subtitle": "Ягодный компот",
-        "weight": 1,
-        "price": 250,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/kompot_vtJKCpo/b87ba280c363b7989075d4fe5136ab13.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Каримов М. Кара-Суу р-н",
+        "place": "Асан-Ата",
+        "number": "№75 08.12. 2020г",
+        "point": "",
+        "phone": 556050378,
+        "people": 8,
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            850
+          ]
+        ]
       },
       {
         "id": 80,
-        "title": "Фирменный напиток Бухара",
-        "subtitle": "Чалап",
-        "weight": "0.25/1",
-        "price": 120,
-        "images": "https://assorti.kg/media/CACHE/images/uploads/restaurant/dishes/firm_napitok_Buhara_SmlAPCU/3a01fffa0607399d3fca434e5beacf06.jpg",
-        "info": [17.23, 7.63, 22.35, 234],
-        "category": "Напитки"
+        "name": "Сатыбаев Н. Кара-Суу",
+        "place": "Кыргыз био-органик",
+        "number": "№91 16.07.2021г",
+        "point": "",
+        "phone": 553336603,
+        "people": 100,
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            80
+          ]
+        ]
+      },
+      {
+        "id": 81,
+        "name": "Бүлөлү а/а  Ошская область Алайский район",
+        "place": "",
+        "number": "№3/2 01.09.20 Булолу айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          127,
+          0,
+          [
+            "картошка",
+            "арпа",
+            "беде, эспарцет"
+          ],
+          [
+            100,
+            50,
+            200
+          ]
+        ]
+      },
+      {
+        "id": 82,
+        "name": "Жошолу а/а Ошская область Алайский район",
+        "place": "",
+        "number": "№38/1 26.06.20 Жошолу айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          401,
+          0,
+          [
+            "картошка",
+            "жүгөрү",
+            "арпа",
+            "өрүк",
+            "аралаш жер-жемиш",
+            "алма"
+          ],
+          [
+            50,
+            15,
+            30,
+            5,
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 83,
+        "name": "Чон-Алай а/а Ошская область Чон-Алайский район.",
+        "place": "",
+        "number": "№2 12.09.20 Чон-Алай айылдык кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          120,
+          0,
+          [
+            "картошка",
+            "арпа"
+          ],
+          [
+            150,
+            35
+          ]
+        ]
+      },
+      {
+        "id": 84,
+        "name": "Жыйынтык",
+        "place": "21 пилот.хоз 3 орг. аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          949.35,
+          "720 тонна  200 миң көчөт",
+          [
+            "картошка",
+            "сарымсак",
+            "жүгөрү",
+            "арпа",
+            "өрүк",
+            "беде, эспарцет",
+            "аралаш мөмө бак",
+            "аралаш жер-жемиш",
+            "алма",
+            "топоз эти",
+            "уй эти",
+            "кой эти",
+            "эчки эти",
+            "жылкы эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            740,
+            0.3,
+            496,
+            245,
+            5,
+            200,
+            "200 миң көчөт",
+            9,
+            60,
+            5,
+            6.3,
+            0.8,
+            0.2,
+            1,
+            930
+          ]
+        ]
+      }
+    ],
+    "Chuy": [
+      {
+        "id": 85,
+        "name": "Будайтиев К. Кемин",
+        "place": "Ч/Ф",
+        "number": "№51 13.09. 2019г",
+        "point": "",
+        "phone": 505166402,
+        "people": "",
+        "products": [
+          14,
+          0,
+          [
+            "жүгөрү",
+            "арпа"
+          ],
+          [
+            35,
+            14
+          ]
+        ]
+      },
+      {
+        "id": 86,
+        "name": "Абдыраимов Т. Кемин",
+        "place": "Ч/Ф",
+        "number": "№52 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          7,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "беде, эспарцет"
+          ],
+          [
+            30,
+            5,
+            20
+          ]
+        ]
+      },
+      {
+        "id": 87,
+        "name": "Долотбаков К. Чуй",
+        "place": "Ч/Ф",
+        "number": "№53 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          100,
+          0,
+          [
+            "буудай",
+            "беде, эспарцет"
+          ],
+          [
+            71,
+            286
+          ]
+        ]
+      },
+      {
+        "id": 88,
+        "name": "Уракунов Т. Чуй",
+        "place": "Ч/Ф",
+        "number": "№54 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          7,
+          0,
+          [
+            "буудай",
+            "беде, эспарцет"
+          ],
+          [
+            10,
+            20
+          ]
+        ]
+      },
+      {
+        "id": 89,
+        "name": "Зиновьев Я. Ысык-Ата",
+        "place": "СХ Завета Ильича",
+        "number": "№55 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          15,
+          0,
+          [
+            "беде, эспарцет"
+          ],
+          [
+            100
+          ]
+        ]
+      },
+      {
+        "id": 90,
+        "name": "Иманалиев Р. Ысык-Ата",
+        "place": "Таза-Жан",
+        "number": "№56 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "буудай"
+          ],
+          [
+            9
+          ]
+        ]
+      },
+      {
+        "id": 91,
+        "name": "Алымов Д. Аламудун",
+        "place": "КХ \"Эко Ферма\"",
+        "number": "№57 13.09. 2019г",
+        "point": "",
+        "phone": 555971333,
+        "people": "",
+        "products": [
+          5,
+          0,
+          [
+            "аралаш мөмө бак",
+            "күнөскана",
+            "аралаш жер-жемиш"
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 92,
+        "name": "Мустаков С. Аламудун",
+        "place": "\"Ветка\" СХ",
+        "number": "№58 13.09. 2019г\n",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          38,
+          0,
+          [
+            "жүгөрү",
+            "арпа"
+          ],
+          [
+            150,
+            16
+          ]
+        ]
+      },
+      {
+        "id": 93,
+        "name": "Гасанов С. Сокулукй",
+        "place": "Камал-Ата",
+        "number": "№59 13.09. 2019г",
+        "point": "",
+        "phone": 501438434,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "арпа"
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      {
+        "id": 94,
+        "name": "Базаркулов К. Сокулук",
+        "place": "Ч/Ф",
+        "number": "№60 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
+      },
+      {
+        "id": 95,
+        "name": "Асадова А. Москва",
+        "place": "\"Энгельс\" КХ",
+        "number": "№61 13.09.  2019г",
+        "point": "",
+        "phone": 550886237,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "жүгөрү",
+            "буудай",
+            "арпа"
+          ],
+          [
+            5,
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 96,
+        "name": "Олейников В. Москва",
+        "place": "Васириюс",
+        "number": "№62 13.09. 2019г",
+        "point": "",
+        "phone": 555011040,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "жүгөрү",
+            "буудай",
+            "арпа"
+          ],
+          [
+            15,
+            8,
+            6
+          ]
+        ]
+      },
+      {
+        "id": 97,
+        "name": "Кадыркулов Р. Жайыл",
+        "place": "\"Райымбек\" КХ",
+        "number": "№63 13.09. 2019г",
+        "point": "",
+        "phone": 555446776,
+        "people": "",
+        "products": [
+          60,
+          0,
+          [
+            "буудай",
+            "арпа"
+          ],
+          [
+            60,
+            65
+          ]
+        ]
+      },
+      {
+        "id": 98,
+        "name": "Абылгазиев Н. Жайыл",
+        "place": "Жеке фермер",
+        "number": "№64 13.09. 2019г",
+        "point": "",
+        "phone": 555164832,
+        "people": "",
+        "products": [
+          175,
+          0,
+          [
+            "беде, эспарцет",
+            "алма"
+          ],
+          [
+            6,
+            4
+          ]
+        ]
+      },
+      {
+        "id": 99,
+        "name": "Аксакалов М. Панфилов",
+        "place": "Касиет",
+        "number": "№65 13.09. 2019г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          69,
+          0,
+          [
+            "арпа",
+            "беде, эспарцет"
+          ],
+          [
+            88,
+            125
+          ]
+        ]
+      },
+      {
+        "id": 100,
+        "name": "Жунушалиев Б. Панфилов",
+        "place": "Ч/Ф",
+        "number": "№66 13.09. 2019г",
+        "point": "",
+        "phone": 507097775,
+        "people": "",
+        "products": [
+          4,
+          0,
+          [
+            "аралаш мөмө бак"
+          ],
+          [
+            10
+          ]
+        ]
+      },
+      {
+        "id": 101,
+        "name": "Пяк И Аламедин",
+        "place": "ч/ф",
+        "number": "№77 24.02. 2021г",
+        "point": "",
+        "phone": 772540847,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            10
+          ]
+        ]
+      },
+      {
+        "id": 102,
+        "name": "Кемелбаев У Сокулук",
+        "place": "ч/ф",
+        "number": "№87 19.05. 2021г",
+        "point": "",
+        "phone": 700799741,
+        "people": "",
+        "products": [
+          8,
+          0,
+          [
+            "жүгөрү",
+            "беде, эспарцет",
+            "аралаш мөмө бак"
+          ],
+          [
+            15,
+            9,
+            8
+          ]
+        ]
+      },
+      {
+        "id": 103,
+        "name": "Арстанбек М г. Бишкек",
+        "place": "ч/ф",
+        "number": "№88 16.07. 2021г",
+        "point": "",
+        "phone": 559002636,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 104,
+        "name": "ОсОО \"Алтын-Куш\"",
+        "place": "ч/ф",
+        "number": "№74 03.08. 2020г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "зоогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            30
+          ]
+        ]
+      },
+      {
+        "id": 105,
+        "name": "Ибрагимова З Чуй",
+        "place": "ч/ф",
+        "number": "№116 02.08. 2022г",
+        "point": "",
+        "phone": 709710319,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 106,
+        "name": "Салманова Н Чуй",
+        "place": "ч/ф",
+        "number": "№114 01.02. 2022г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 107,
+        "name": "Байышов К Ысык-Ата",
+        "place": "ч/ф",
+        "number": "№129 05.08. 2022г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            10
+          ]
+        ]
+      },
+      {
+        "id": 108,
+        "name": "Вологжаниной Т Ысык-Ата",
+        "place": "ч/ф",
+        "number": "№120 30.04. 2022г",
+        "point": "",
+        "phone": 555211406,
+        "people": "",
+        "products": [
+          1.18,
+          0,
+          [
+            "дары чөптөр"
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      {
+        "id": 109,
+        "name": "Нишанов М г. Кара-Балта",
+        "place": "ч/ф",
+        "number": "№119 28.04. 2022г",
+        "point": "",
+        "phone": 778103867,
+        "people": "",
+        "products": [
+          11,
+          0,
+          [
+            "алма"
+          ],
+          [
+            55
+          ]
+        ]
+      },
+      {
+        "id": 110,
+        "name": "Момуналиев Р Аламудун",
+        "place": "ч/ф",
+        "number": "№134 26.12. 2022г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 111,
+        "name": "Таникулова К. г. Бишкек",
+        "place": "ОсОО “Алтын Азык”",
+        "number": "№137 01.02. 2023г",
+        "point": "",
+        "phone": 550804030,
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            10
+          ]
+        ]
+      },
+      {
+        "id": 112,
+        "name": "Сыдыкбаева Ж г.Бишкек",
+        "place": "ч/ф",
+        "number": "№138 17.01. 2023г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            4
+          ]
+        ]
+      },
+      {
+        "id": 113,
+        "name": "Токтошев Э. г. Бишкек",
+        "place": "ч/ф",
+        "number": "№139 04.04. 2023г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "корм для рыб",
+          0,
+          [
+            "корм для рыб"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 114,
+        "name": "Рахматов Т. г. Бишкек",
+        "place": "ч/ф",
+        "number": "№140 10.04.2023г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      {
+        "id": 115,
+        "name": "Сатыбеков Н Чуйский р-н",
+        "place": "ч/ф",
+        "number": "№141 10.04. 2023г",
+        "point": "",
+        "phone": 550353715,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "алма"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 116,
+        "name": "Анакеев А г. Бишкек",
+        "place": "ч/ф",
+        "number": "№142 04.04. 2023г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            10
+          ]
+        ]
+      },
+      {
+        "id": 117,
+        "name": "Бекбоев Т Ысык-Атинский  р-н",
+        "place": "ч/ф",
+        "number": "№144 10.04. 2023г",
+        "point": "",
+        "phone": 705999412,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "аралаш мөмө бак"
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "id": 118,
+        "name": "Жунушев У. г. Бишкек",
+        "place": "\"Бирлик\" кооператив",
+        "number": "№145 22.03. 2023г",
+        "point": "",
+        "phone": 502499888,
+        "people": "",
+        "products": [
+          "лекарственные травы",
+          0,
+          [
+            "дары чөптөр"
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      {
+        "id": 119,
+        "name": "Турдакунов Т Чуйский р-н",
+        "place": "ч/ф",
+        "number": "№146 10.04. 2023г",
+        "point": "",
+        "phone": 500661031,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "жүгөрү",
+            "буудай",
+            "арпа"
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 120,
+        "name": "Дуйшенов Д Чуйский р-н",
+        "place": "ч/ф",
+        "number": "№147 10.04. 2023г",
+        "point": "",
+        "phone": 502078858,
+        "people": "",
+        "products": [
+          1,
+          0,
+          [
+            "картошка",
+            "жүгөрү"
+          ],
+          [
+            5,
+            3
+          ]
+        ]
+      },
+      {
+        "id": 121,
+        "name": "Исаев Ч. Чүй",
+        "place": "ч/ф",
+        "number": "№148",
+        "point": "",
+        "phone": 990777777,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
+      },
+      {
+        "id": 122,
+        "name": "Мамашев Т Чүй",
+        "place": "ч/ф",
+        "number": "№149",
+        "point": "",
+        "phone": 557888144,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
+      },
+      {
+        "id": 123,
+        "name": "Рахмидинова Н Чү",
+        "place": "",
+        "number": "",
+        "point": "",
+        "phone": 707051110,
+        "people": "",
+        "products": [
+          0,
+          0,
+          [],
+          []
+        ]
+      },
+      {
+        "id": 124,
+        "name": "Кош-Коргон а/а Чуйская область Чуйский район с. Кош-Коргон 27.10.21. №16 Токтом",
+        "place": "",
+        "number": "№16 27.10.20 Кош-Коргонский айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1558,
+          0,
+          [
+            "картошка",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "алма",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            50,
+            100,
+            80,
+            60,
+            40,
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 125,
+        "name": "Чуйская область Московский район Ак-Суйский а/а ",
+        "place": "",
+        "number": "№192 17.03.21.  Токтом Ак-Суу айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          9875,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "пияз",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "алма",
+            "уй эти",
+            "кой эти",
+            "эчки эти"
+          ],
+          [
+            150,
+            80,
+            100,
+            120,
+            70,
+            40,
+            50,
+            20,
+            10,
+            10,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 126,
+        "name": "Жыйынтык",
+        "place": "37 пилот.хоз 2 орг. аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          11433,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "пияз",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "аралаш мөмө бак",
+            "күнөскана",
+            "аралаш жер-жемиш",
+            "дары чөптөр",
+            "алма",
+            "уй эти",
+            "кой эти",
+            "эчки эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            235,
+            80,
+            100,
+            120,
+            395,
+            206,
+            318,
+            524,
+            21,
+            2,
+            2,
+            5,
+            720,
+            15,
+            15,
+            5,
+            106
+          ]
+        ]
+      }
+    ],
+    "Talas": [
+      {
+        "id": 127,
+        "name": "Шорукова Р. Талас",
+        "place": "Ч/Ф",
+        "number": "№67 13.09. 2021г",
+        "point": "",
+        "phone": 705689235,
+        "people": "",
+        "products": [
+          3.5,
+          2,
+          [
+            "картошка",
+            "төө буурчак",
+            "перец",
+            "аралаш мөмө бак"
+          ],
+          [
+            1,
+            4,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 128,
+        "name": "Омурсаков Б. Айтматов",
+        "place": "Ч/Ф",
+        "number": "№68 13.09. 2021г",
+        "point": "",
+        "phone": 550812142,
+        "people": "",
+        "products": [
+          6,
+          0,
+          [
+            "томат",
+            "төө буурчак",
+            "кызылча",
+            "алма",
+            "кой эти",
+            "жылкы эти"
+          ],
+          [
+            1,
+            10,
+            20,
+            3,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 129,
+        "name": "Токтогулова Г. Айтматов",
+        "place": "Ч/Ф",
+        "number": "№69 13.09. 2021г",
+        "point": "",
+        "phone": 550022430,
+        "people": "",
+        "products": [
+          7,
+          0,
+          [
+            "пияз",
+            "томат",
+            "буудай"
+          ],
+          [
+            1,
+            1,
+            14
+          ]
+        ]
+      },
+      {
+        "id": 130,
+        "name": "Мырзагулов О. Айтматов",
+        "place": "Ч/Ф",
+        "number": "№71 13.09. 2021г",
+        "point": "",
+        "phone": 557150213,
+        "people": "",
+        "products": [
+          3,
+          2,
+          [
+            "картошка",
+            "кара өрүк",
+            "төө буурчак",
+            "шабдалы",
+            "алма"
+          ],
+          [
+            1,
+            2,
+            2,
+            1.5,
+            4
+          ]
+        ]
+      },
+      {
+        "id": 131,
+        "name": "Джумашов Т. Манас",
+        "place": "Ч/Ф",
+        "number": "№72 13.09. 2021г",
+        "point": "",
+        "phone": 559220620,
+        "people": "",
+        "products": [
+          6,
+          3,
+          [
+            "буудай",
+            "төө буурчак",
+            "беде, эспарцет",
+            "уй эти"
+          ],
+          [
+            6,
+            3,
+            30,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 132,
+        "name": "Асылбеков А. Айтматов",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 707031007,
+        "people": "",
+        "products": [
+          3,
+          5,
+          [
+            "буудай",
+            "төө буурчак"
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 133,
+        "name": "Мырзатаев Ж Айтматов р-н",
+        "place": "ч/ф",
+        "number": "№21",
+        "point": "",
+        "phone": 702121011,
+        "people": "",
+        "products": [
+          5,
+          0,
+          [
+            "төө буурчак",
+            "алма",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            10,
+            2,
+            0.5,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 134,
+        "name": "Бокуев К. Бакай-Ата",
+        "place": "Ч/Ф",
+        "number": "№17",
+        "point": "",
+        "phone": 709757515,
+        "people": "",
+        "products": [
+          17,
+          0,
+          [
+            "төө буурчак",
+            "беде, эспарцет",
+            "алма",
+            "эчки эти"
+          ],
+          [
+            7,
+            15,
+            2,
+            12
+          ]
+        ]
+      },
+      {
+        "id": 135,
+        "name": "Каныбек уулу Ж. Айтматов",
+        "place": "Жылдызбек",
+        "number": "№6",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          6,
+          0,
+          [
+            "буудай"
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      {
+        "id": 136,
+        "name": "Сариев Р. Бакай-Ата",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 552177552,
+        "people": "",
+        "products": [
+          2.2,
+          0,
+          [
+            "алма"
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      {
+        "id": 137,
+        "name": "Абдылдаев А Айтматов р-н",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 555654835,
+        "people": "",
+        "products": [
+          3,
+          5,
+          [
+            "төө буурчак"
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      {
+        "id": 138,
+        "name": "Умарбеков Ж. Айтматов",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 556451080,
+        "people": "",
+        "products": [
+          2.6,
+          0,
+          [],
+          []
+        ]
+      },
+      {
+        "id": 139,
+        "name": "Торогелдиев Т Кара-Бууринский р-н",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          6,
+          6,
+          [
+            "кара өрүк",
+            "төө буурчак"
+          ],
+          [
+            6,
+            12
+          ]
+        ]
+      },
+      {
+        "id": 140,
+        "name": "Дубанаев Б Кара-Бууринский р-н",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": 551446693,
+        "people": "",
+        "products": [
+          3,
+          4,
+          [
+            "буудай",
+            "кара өрүк",
+            "төө буурчак",
+            "алма"
+          ],
+          [
+            3,
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 141,
+        "name": "Боромбаев Б. Айтматов",
+        "place": "ч/ф",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          "биогумус",
+          0,
+          [
+            "Органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "id": 142,
+        "name": "Барпыкул а/а Талаская областы Кара-Бууринский район с.Кызыл-Адыр",
+        "place": "",
+        "number": "№32 19.10.20 Кара-Бууринский айылный кенеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          70,
+          0,
+          [
+            "буудай",
+            "алма",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            100,
+            75,
+            3,
+            10
+          ]
+        ]
+      },
+      {
+        "id": 143,
+        "name": "Жыйынтык",
+        "place": "15 пилот.хоз 1 орг. аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          143.8,
+          27,
+          [
+            "картошка",
+            "пияз",
+            "томат",
+            "буудай",
+            "кара орук",
+            "тоо буурчак",
+            "перец",
+            "беде, эспарцет",
+            "аралаш мөмө бак",
+            "кызылча",
+            "шабдалы",
+            "алма",
+            "уй эти",
+            "кой эти",
+            "эчки эти",
+            "жылкы эти"
+          ],
+          [
+            2,
+            1,
+            2,
+            132,
+            9,
+            61,
+            1,
+            45,
+            1,
+            20,
+            1.5,
+            90,
+            5.5,
+            11.5,
+            12,
+            2
+          ]
+        ]
+      }
+    ],
+    "Naryn": [
+      {
+        "id": 144,
+        "name": "Алжанбаев Ж. Кочкор",
+        "place": "\"Доскулу\"",
+        "number": "№107 20.08. 2021г",
+        "point": "",
+        "phone": 708262598,
+        "people": "",
+        "products": [
+          7,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "арпа",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            20,
+            9,
+            8,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 145,
+        "name": "Мусаканов М. Ат-Башы",
+        "place": "Ырыс",
+        "number": "№108 20.08. 2021г",
+        "point": "",
+        "phone": 709194284,
+        "people": "",
+        "products": [
+          30,
+          0,
+          [
+            "картошка",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "жылкы эти"
+          ],
+          [
+            8,
+            15,
+            88,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 146,
+        "name": "Сыяев Т. Ат-Башы",
+        "place": "Кереге",
+        "number": "№106 20.08. 2021г",
+        "point": "",
+        "phone": 702853773,
+        "people": "",
+        "products": [
+          62,
+          0,
+          [
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти"
+          ],
+          [
+            60,
+            55,
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 147,
+        "name": "Карыбеков А. Нарын",
+        "place": "Улгу",
+        "number": "№113",
+        "point": "",
+        "phone": 705844043,
+        "people": "",
+        "products": [
+          35,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "жылкы эти"
+          ],
+          [
+            32,
+            42,
+            40,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 148,
+        "name": "Керимбаев Э. Нарын",
+        "place": "Калча",
+        "number": "№105 20.08. 2021г",
+        "point": "",
+        "phone": 702182288,
+        "people": "",
+        "products": [
+          92,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти"
+          ],
+          [
+            75,
+            87,
+            148,
+            3,
+            2,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 149,
+        "name": "Казиев Э. Ак-Талаа",
+        "place": "Эрлан-К",
+        "number": "№9 20.08. 2021г",
+        "point": "",
+        "phone": 703928120,
+        "people": "",
+        "products": [
+          101,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "кой эти",
+            "жылкы эти"
+          ],
+          [
+            96,
+            60,
+            70,
+            1.5,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 150,
+        "name": "Бексултанов А. Ак-Талаа",
+        "place": "Жакаш",
+        "number": "№15 20.08. 2021г",
+        "point": "",
+        "phone": 708852622,
+        "people": "",
+        "products": [
+          21,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "кой эти"
+          ],
+          [
+            18,
+            42,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 151,
+        "name": "Молдобасаров  Жумгал",
+        "place": "Ч/Ф",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          30,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспрацтет"
+          ],
+          [
+            30,
+            35,
+            32
+          ]
+        ]
+      },
+      {
+        "id": 152,
+        "name": "Шамбеков А. Жумгал",
+        "place": "Ч/Ф",
+        "number": "№102",
+        "point": "",
+        "phone": 702854990,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти"
+          ],
+          [
+            13,
+            9,
+            12,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 153,
+        "name": "Кулманов А. Жумгал",
+        "place": "Ч/Ф",
+        "number": "№101 20.08. 2021г",
+        "point": "",
+        "phone": 705818382,
+        "people": "",
+        "products": [
+          20,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "кой эти"
+          ],
+          [
+            12,
+            8.5,
+            11,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 154,
+        "name": "Жээналиев Т. Жумгал",
+        "place": "Ч/Ф",
+        "number": "",
+        "point": "",
+        "phone": 502818109,
+        "people": "",
+        "products": [
+          26,
+          0,
+          [
+            "буудай",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            45,
+            40,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 155,
+        "name": "Нураалы уулу  Жумгал",
+        "place": "Ч/Ф",
+        "number": "№100 20.08. 2021г",
+        "point": "",
+        "phone": 708530845,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "арпа",
+            "кой эти"
+          ],
+          [
+            8,
+            10,
+            9,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 156,
+        "name": "Абакиров Р. Кочкор",
+        "place": "Ч/Ф",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          15,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "кой эти"
+          ],
+          [
+            15,
+            14,
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 157,
+        "name": "Момуналиев Б. Ат-Башы",
+        "place": "ч/ф",
+        "number": "№99 20.08. 2021г",
+        "point": "",
+        "phone": 705516156,
+        "people": "",
+        "products": [
+          13,
+          0,
+          [
+            "картошка",
+            "беде, эспарцет"
+          ],
+          [
+            8,
+            42
+          ]
+        ]
+      },
+      {
+        "id": 158,
+        "name": "Токтоналиев Т. Жумгал",
+        "place": "ч/ф",
+        "number": "№103 20.08. 2021г",
+        "point": "",
+        "phone": 708530845,
+        "people": "",
+        "products": [
+          15,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "уй эти",
+            "кой эти"
+          ],
+          [
+            16,
+            15,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": 159,
+        "name": "Осмоналиев Р. Кочкор",
+        "place": "ч/ф",
+        "number": "№104 20.08. 2021г",
+        "point": "",
+        "phone": 700031116,
+        "people": "",
+        "products": [
+          14,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "беде, эспарцет",
+            "жылкынын эти"
+          ],
+          [
+            54,
+            18,
+            19,
+            0.2
+          ]
+        ]
+      },
+      {
+        "id": 160,
+        "name": "Шакиров С. Жумгал",
+        "place": "ч/ф",
+        "number": "№109 20.08. 2021г",
+        "point": "",
+        "phone": 772700223,
+        "people": "",
+        "products": [
+          5,
+          0,
+          [
+            "арпа",
+            "беде, эспарцет",
+            "уй эти"
+          ],
+          [
+            9,
+            8,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 161,
+        "name": "Алапаев Т.А. Жумгал",
+        "place": "Ч/Ф",
+        "number": "№110 20.08. 2021г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          5,
+          0,
+          [
+            "арпа",
+            "уй эти"
+          ],
+          [
+            6,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 162,
+        "name": "Асаналиев С Жумгал",
+        "place": "ч/ф",
+        "number": "№76 10.02. 2021г",
+        "point": "",
+        "phone": 705278088,
+        "people": "",
+        "products": [
+          0.2,
+          0,
+          [
+            "арпа",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            0.5,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 163,
+        "name": "Осмонов Р Кочкор",
+        "place": "ч/ф",
+        "number": "№92 16.07.2021г",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "картошка",
+            "арпа",
+            "беде, эспарцет",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            16,
+            15,
+            15,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 164,
+        "name": "Абдылдаев А Жумгал",
+        "place": "ч/ф",
+        "number": "№89 16.07. 2021г",
+        "point": "",
+        "phone": 707539332,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "арпа",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            8,
+            3.5,
+            4.5,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 165,
+        "name": "Джоошев Д.К.",
+        "place": "ч/ф",
+        "number": "№123 11.07. 2022г",
+        "point": "",
+        "phone": 703767537,
+        "people": "",
+        "products": [
+          3,
+          0,
+          [
+            "арпа"
+          ],
+          [
+            8
+          ]
+        ]
+      },
+      {
+        "id": 166,
+        "name": "Ураймахун у.М Ат-Башы",
+        "place": "ч/ф",
+        "number": "№125 03.08. 2022г",
+        "point": "",
+        "phone": 700685555,
+        "people": "",
+        "products": [
+          "",
+          0,
+          [
+            "беде, люцерна",
+            "кой эти"
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 167,
+        "name": "Эшманбетов У Ат-Башы",
+        "place": "ч/ф",
+        "number": "№127 03.08. 2022г",
+        "point": "",
+        "phone": 504232353,
+        "people": "",
+        "products": [
+          6,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "кой эти"
+          ],
+          [
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "id": 168,
+        "name": "Молдобаев А Ат-Башы",
+        "place": "ч/ф",
+        "number": "№132 25.08. 2022г",
+        "point": "",
+        "phone": 500151949,
+        "people": "",
+        "products": [
+          1.5,
+          0,
+          [
+            "беде, эспарцет",
+            "жылкы эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            30.8,
+            1,
+            30
+          ]
+        ]
+      },
+      {
+        "id": 169,
+        "name": "Айыпов А Ат-Башы",
+        "place": "ч/ф",
+        "number": "№126 11.08. 2022г",
+        "point": "",
+        "phone": 703549686,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "уй эти"
+          ],
+          [
+            1,
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "id": 170,
+        "name": "Алтыбай у Б Ат-Башы",
+        "place": "ч/ф",
+        "number": "№128 15.08. 2022г",
+        "point": "",
+        "phone": 773297001,
+        "people": "",
+        "products": [
+          8.7,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "арпа",
+            "кой эти"
+          ],
+          [
+            1,
+            2,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "id": 171,
+        "name": "Уркунчиев К Ат-Башы",
+        "place": "ч/ф",
+        "number": "№130 15.08. 2022г",
+        "point": "",
+        "phone": 704687500,
+        "people": "",
+        "products": [
+          5,
+          0,
+          [
+            "картошка",
+            "буудай",
+            "арпа",
+            "кой эти"
+          ],
+          [
+            0.2,
+            1,
+            21,
+            0.5
+          ]
+        ]
+      },
+      {
+        "id": 172,
+        "name": "Абдыжакыпов С Нарын",
+        "place": "Азим-С",
+        "number": "",
+        "point": "",
+        "phone": 709616149,
+        "people": "",
+        "products": [
+          10,
+          0,
+          [
+            "буудай",
+            "арпа",
+            "беде, люцерна",
+            "кой эти"
+          ],
+          [
+            9,
+            8,
+            14,
+            3
+          ]
+        ]
+      },
+      {
+        "id": 173,
+        "name": "Калча а/а Нарынская область Нарынский район с.Эмгек-Талаа Ташболотов Эркинбек",
+        "place": "",
+        "number": "№2 03.11.20 Эмгек-Талаа айылный кеңеш",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          1884,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "пияз",
+            "томат",
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти"
+          ],
+          [
+            1157,
+            20,
+            37,
+            80,
+            399,
+            864,
+            1496,
+            242,
+            445,
+            580
+          ]
+        ]
+      },
+      {
+        "id": 174,
+        "name": "Жумгалский район Байзак а/о Жээналиев Бакыт",
+        "place": "",
+        "number": "09.02.2021г. №45/2 Токтом Байзак айылный кенеш",
+        "point": "",
+        "phone": 702420553,
+        "people": "",
+        "products": [
+          2052,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            904.5,
+            100,
+            37.5,
+            200,
+            744,
+            1164,
+            5835,
+            610,
+            430,
+            316,
+            6
+          ]
+        ]
+      },
+      {
+        "id": 175,
+        "name": "Ат –Башы органикалык пилоттук району Качкынбаев Кенжебек",
+        "place": "",
+        "number": "№13 09.12.2022ж",
+        "point": "",
+        "phone": 554522525,
+        "people": "",
+        "products": [
+          26115,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            27010.5,
+            125.5,
+            100,
+            250,
+            129.2,
+            5605.1,
+            84115,
+            895,
+            1205,
+            1690,
+            30
+          ]
+        ]
+      },
+      {
+        "id": 176,
+        "name": "жыйынтык",
+        "place": "31 Пил. чарба 3 Аймак",
+        "number": "",
+        "point": "",
+        "phone": "",
+        "people": "",
+        "products": [
+          30652.9,
+          0,
+          [
+            "картошка",
+            "бадыраң",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "беде, эспарцет",
+            "уй эти",
+            "кой эти",
+            "жылкы эти",
+            "органикалык жер семирткич көлөмү (тонна)"
+          ],
+          [
+            29195.2,
+            245.5,
+            174.5,
+            530,
+            1677.2,
+            8116.6,
+            92130,
+            1761.5,
+            2103.5,
+            2599.2,
+            85
+          ]
+        ]
+      }
+    ],
+    "Koika": [
+      {
+        "id": 1,
+        "number": "№1",
+        "name": "Teplokluychenka орг. аймагы Касымов Мирлан",
+        "area": "4 812",
+        "place": "Ысык-Көл Ак-Суу",
+        "phone": 508770070,
+        "Plants": [
+          [
+            "картошка",
+            "бадыраң",
+            "сарымсак",
+            "томат",
+            "жүгөрү",
+            "буудай",
+            "арпа",
+            "аралаш мөмө-бак",
+            "аралаш жер-жемиш",
+            "алма"
+          ],
+          [
+            26909,
+            250,
+            129,
+            250,
+            500,
+            5430,
+            1353,
+            418,
+            "321,5",
+            150
+          ]
+        ],
+        "Meat": [
+          [
+            "топоз эти",
+            "кой эти",
+            "уй эти",
+            "канаттуулар эти",
+            "жумуртка"
+          ],
+          [
+            2,
+            3,
+            5,
+            1,
+            10000
+          ]
+        ]
+      },
+      {
+        "id": 2,
+        "number": "№2",
+        "name": "Маман орг. аймагы Токомбаев Акылбек",
+        "area": 4233,
+        "place": "Ысык-Көл Ак-Суу",
+        "phone": 703511760,
+        "Plants": [
+          [
+            "картошка",
+            "сарымсак",
+            "арпа",
+            "буудай"
+          ],
+          [
+            2880,
+            500,
+            449,
+            386
+          ]
+        ],
+        "Meat": [
+          [
+            "кой эти",
+            "жылкы эти",
+            "жумуртка"
+          ],
+          [
+            1,
+            1,
+            20000
+          ]
+        ]
+      },
+      {
+        "id": 3,
+        "number": "№3",
+        "name": "Тосор орг. аймагы Базаркулов Талант",
+        "area": 1602,
+        "place": "Ысык-Көл Жети-Өгүз",
+        "phone": 703010908,
+        "Plants": [
+          [
+            "картошка",
+            "сарымсак",
+            "буудай",
+            "арпа",
+            "өрүк",
+            "аралаш мөмө-бак",
+            "аралаш жер-жемиш",
+            "алма"
+          ],
+          [
+            2896,
+            "54,6",
+            "643,2",
+            740,
+            2000,
+            2929,
+            272,
+            76
+          ]
+        ],
+        "Meat": [
+          [
+            "топоз эти",
+            "кой эти",
+            "жумуртка"
+          ],
+          [
+            1,
+            2,
+            35000
+          ]
+        ]
+      }
+    ],
+    "WorldCertifi": [
+      {
+        "id": 1,
+        "koop": "Сельскохозяйственный Товарно-Сервисный Кооператив \"Аксы-Био\"  и группа фермеров (которые объединены в кооператив \"Бозбу Ата\")",
+        "owner": "Карбосов Жуманазар",
+        "certificate": "Экспорт Контроль Юнион,  Нидерланды Германия, EgeSun Morgenland; Сан Планет Россия; Сан Планет Органик (КР)",
+        "people": 120,
+        "area": 45,
+        "port": 20,
+        "phone": 773701745,
+        "products": [
+          [
+            "кара өрүк как"
+          ],
+          [
+            30
+          ]
+        ]
+      },
+      {
+        "id": 2,
+        "koop": "Переработчик ОсОО \"Фермерс Органик Гарден\"",
+        "owner": "Казаев Юнус",
+        "certificate": "Экспорт Эко Серт Турция Турция,  Германия, Галандия, Америка",
+        "people": 400,
+        "area": "-",
+        "port": 1200,
+        "phone": 552090002,
+        "products": [
+          [
+            "жаңгак, ",
+            "аралаш мөмө бак"
+          ],
+          [
+            "800, ",
+            700
+          ]
+        ]
+      },
+      {
+        "id": 3,
+        "koop": "Переработчик \"ИП Байоглиев\"",
+        "owner": "Полот Бойаглыев ",
+        "certificate": "Экспорт г.Измир Турция Испанская компания AGRUKAPERS.A.S\n",
+        "people": 1000,
+        "area": 1000,
+        "port": 4000,
+        "phone": 555805555,
+        "products": [
+          [
+            "жаңгак"
+          ],
+          [
+            4000
+          ]
+        ]
+      },
+      {
+        "id": 4,
+        "koop": "Сельско-хозяйственный товарно-сервисный кооператив \"Био Фермер\"",
+        "owner": "Нурбек Канназаров \n",
+        "certificate": "ИМО Турция хлопок (Германия) Рейнхарт, местный рынок",
+        "people": 995,
+        "area": 855,
+        "port": 400,
+        "phone": 555937089,
+        "products": [
+          [
+            "пахта"
+          ],
+          [
+            691
+          ]
+        ]
+      },
+      {
+        "id": 5,
+        "koop": "Сельскохозяйственный кооператив \"Алыш-Дан\"",
+        "owner": "Файзулла Акматалиев",
+        "certificate": "ИМО, Турция жергиликтуу базар",
+        "people": 500,
+        "area": 161,
+        "port": 297,
+        "phone": 555725858,
+        "products": [
+          [
+            "өрүк"
+          ],
+          [
+            300
+          ]
+        ]
+      },
+      {
+        "id": 6,
+        "koop": "Сельско-хозяйственный товарно-сервисный кооператив \"Иссык-Куль Органика\"",
+        "owner": "Сонунгуль Жылтырова ",
+        "certificate": "Экспор тИМО (Турция 2015-2018) Германия без сертификата ",
+        "people": 223,
+        "area": 150,
+        "port": 58,
+        "phone": 702918580,
+        "products": [
+          [
+            "дары чөптөр"
+          ],
+          [
+            58
+          ]
+        ]
+      },
+      {
+        "id": 7,
+        "koop": "“Сан Планет Органик”",
+        "owner": "Бекназар Асанов",
+        "certificate": "Экспорт Турция",
+        "people": 400,
+        "area": 150,
+        "port": 200,
+        "phone": 708000078,
+        "products": [
+          [
+            "хлопок"
+          ],
+          [
+            200
+          ]
+        ]
+      },
+      {
+        "id": 8,
+        "koop": "Кооператив «Ишкер KG»",
+        "owner": "Мулабаева Зияда",
+        "certificate": "Сертификат EU Organic",
+        "people": 200,
+        "area": 51,
+        "port": 50,
+        "phone": 705091244,
+        "products": [
+          [
+            "Жапайы продукцияны кайра иштетүү"
+          ],
+          [
+            50
+          ]
+        ]
+      },
+      {
+        "id": 9,
+        "koop": "Кооператив \"Берен\"",
+        "owner": "Жакшымбеков Акылбек",
+        "certificate": "Сертификат EU Organic",
+        "people": 268,
+        "area": "72 орг  212 переход",
+        "port": 2000,
+        "phone": 555201766,
+        "products": [
+          [
+            "фасоль"
+          ],
+          [
+            3000
+          ]
+        ]
+      },
+      {
+        "id": 10,
+        "koop": "",
+        "owner": "",
+        "certificate": "",
+        "people": 3838,
+        "area": 2624,
+        "port": 8225,
+        "phone": "",
+        "products": [
+          [
+            "кара өрүк как, ",
+            "жаңгак, ",
+            "аралаш мөмө-бак, ",
+            "пахта, ",
+            "өрүк, ",
+            "дары чөптөр, ",
+            "хлопок, ",
+            "Жапайы продукцияны кайра иштетүү, ",
+            "фасоль"
+          ],
+          [
+            "30, ",
+            "4800, ",
+            "700, ",
+            "691, ",
+            "300, ",
+            "58, ",
+            "200, ",
+            "50, ",
+            3000
+          ]
+        ]
       }
     ]
   });
